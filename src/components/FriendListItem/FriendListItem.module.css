@@ -1,0 +1,29 @@
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: bisque;
+}
+
+.item:not(:last-child) {
+
+    margin-bottom: 10px;
+}
+
+.online {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.offline {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
