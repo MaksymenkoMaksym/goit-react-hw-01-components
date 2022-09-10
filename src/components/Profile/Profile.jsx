@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { FaUserAstronaut, FaHashtag } from 'react-icons/fa';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
+import iconSize from '../../constants/constants'
 
 
 import css from './Profile.module.css'
@@ -13,10 +14,10 @@ const Profile = ({ avatar, username, tag, stats: { views, likes, followers }, lo
                 alt="User avatar"
                 className={css.avatar}
             />
-            <p className={css.username}><FaUserAstronaut size={16} color={"red"} />&nbsp;{username}</p>
-            <p className={css.tag}><FaHashtag size={16} color={"red"} />&nbsp;{tag}</p>
+            <p className={css.username}><FaUserAstronaut size={iconSize.sm} color={"red"} />&nbsp;{username}</p>
+            <p className={css.tag}><FaHashtag size={iconSize.sm} color={"red"} />&nbsp;{tag}</p>
 
-            <p className={css.location}><HiOutlineLocationMarker size={16} color={"red"} />&nbsp;{location}</p>
+            <p className={css.location}><HiOutlineLocationMarker size={iconSize.sm} color={"red"} />&nbsp;{location}</p>
         </div>
 
         <ul className={css.stats}>
