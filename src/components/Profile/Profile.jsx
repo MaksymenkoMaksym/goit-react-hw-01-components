@@ -48,6 +48,7 @@ const Profile = ({
     </div>
   );
 };
+
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,
