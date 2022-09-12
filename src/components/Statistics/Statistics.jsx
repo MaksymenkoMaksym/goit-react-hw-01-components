@@ -6,11 +6,14 @@ const Statistics = ({ collection, title }) => (
     < section className={css.statisticSection}>
         {title && (<h2 className={css.title}>{title}</h2>)}
         <ul className={css.statList}>
+
             {collection.map(({ id, label, percentage }) => (
-                <Statistic
-                    key={id}
-                    label={label}
-                    percentage={percentage} />
+                <li key={id}>
+                    <Statistic
+                        label={label}
+                        percentage={percentage} />
+                </li>
+
             ))}
         </ul>
     </section >
